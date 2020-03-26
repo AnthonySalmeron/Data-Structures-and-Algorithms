@@ -48,8 +48,8 @@ let Trie = function(){
         }
         return;//a lot of the ones that aren't an end point to a word will return things in their own recursions, but only the final search which began on the root will retun the actual array
       }
-      search(this.root, new String());
-      return words.length>0 ? words : null;
     };
+    search(this.root, new String());
+    return words.length>0 ? words : null;
   };
 }
